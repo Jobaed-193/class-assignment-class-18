@@ -1,0 +1,209 @@
+
+.menu{
+  background-color: black;
+}
+.menu ul{
+  text-align: center;
+}
+.menu ul li{
+  display: inline-block;
+  list-style-type: none;
+  position: relative;
+  margin-left: -4px;
+  z-index: 1;
+  padding: 10px 0;
+}
+.menu ul li a{
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+ 
+ 
+}
+
+.menu ul li::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgb(202, 19, 19);
+  z-index: -1;
+  transition: .4s;
+ 
+}
+
+.menu ul li:hover::before{
+  width: 100%;
+}
+
+.header-div h1{
+  text-align: center;
+  background-color: #f1e3e3;
+  color: black;
+  margin-top: -16px;
+  padding: 10px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.header-div h1::before{
+
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+ 
+  background-color: rgb(78, 11, 233);
+  z-index: -1;
+  transition: .4s;
+}
+.header-div h1:hover::before{
+  width: 100%;
+
+}
+
+.banner{
+  background-image: url(./banner.jpg);
+  padding: 150px 0;
+  background-position:center;
+  background-size: cover;
+  margin-top: -21px;
+  /* display: inline-block; */
+
+ 
+ 
+}
+
+.list-div{
+ text-align: center;
+
+}
+
+.list1{
+  display: inline-block;
+  font-size: 20px;
+  height: 130px;
+  width: 100px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+
+ 
+}
+.list1 li{
+
+  list-style-type: none;
+
+}
+
+.list2{
+  display: inline-block;
+  font-size: 20px;
+  height: 130px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+;
+}
+.list2 li{
+  list-style-type: none;
+
+}
+
+.list3{
+  display: inline-block;
+  font-size: 20px;
+  height: 130px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.list3 li{
+  list-style-type: none;
+}
+
+
+.list2{}
+
+.list2 li::before {
+	content: "\f013 ";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	color: red;
+	font-size: 16px;
+	display: inline-block;
+
+}
+
+
+.list1 li::before{
+	content: "\f157";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	color: red;
+	font-size: 16px;
+	display: inline-block;
+
+}
+
+
+.list2 li::after {
+	content: "\f013";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	color: red;
+	font-size: 16px;
+	display: inline-block;
+
+}
+
+.list3 li::before {
+
+	content: "\f5ac";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	color: red;
+	font-size: 16px;
+	display: inline-block;
+
+
+}
+
+
+.footer{
+
+  background-color: black;
+  padding: 10px 0;
+}
+
+.footer ul{
+  text-align: center;
+}
+.footer ul li{
+  display: inline-block;
+}
+.footer ul li a{
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  background-color: #5ea5fa;
+  color: black;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.footer p{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
